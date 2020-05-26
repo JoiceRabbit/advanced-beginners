@@ -5,7 +5,8 @@
 
 原因是：变量提升（var声明的变量被提升为全局变量，因此每次循环++的都是全局i的值，循环结束，i的值且9，函数执行获取的是全局的i）
 
-<label style="color:red">修改</label>
+**修改**
+
 最终执行结果为 10
 
 原因是：循环结束 i 的值累加到了10
@@ -15,7 +16,8 @@
 
 原因是: let定义的变量不会提升，因此console获取的tmp是全局的tmp
 
-<label style="color:red">修改</label>
+**修改**
+
 最终执行结果为 报错
 
 原因是：console是运行时，js引擎在编译时就知道if作用域中有个t的定义，所以在访问t的时候if作用域里遮蔽了全局的，但是在临时死区访问则报错
@@ -36,7 +38,8 @@ Math.min.apply(null, arr)
 
 原因是: 剪头函数内部的this指向作用域链上最近的this，题目中则是全局的window，所以取得是全局的a
 
-<label style="color:red">修改</label>
+**修改**
+
 最终执行结果为 20
 
 原因是：剪头函数内部的this指向作用域链上最近的this，即fn函数作用域中的this，fn函数被调用时遵循this指向调用者的基本原则，所以a取值为obj的a
