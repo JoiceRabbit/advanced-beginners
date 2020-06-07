@@ -1,0 +1,19 @@
+{
+  "name": "advanced-beginners",
+  "version": "1.0.0",
+  "description": "### 李青 作业仓库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoiceRabbit/advanced-beginners.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoiceRabbit/advanced-beginners/issues"
+  },
+  "homepage": "https://github.com/JoiceRabbit/advanced-beginners#readme"
+}

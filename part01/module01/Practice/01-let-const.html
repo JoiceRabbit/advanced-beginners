@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>let const</title>
+</head>
+
+<body>
+  <script>
+    // var-let
+    // for (var i = 0; i < 3; i++) {
+    //   let i = 2;
+    //   console.log(i)
+    // }
+    // // 3次2 let的局部变量优先级更高
+
+
+    // for (let i = 0; i < 3; i++) {
+    //   var i = 2;
+    //   console.log(i)
+    // }
+    // var全局变量；Uncaught SyntaxError: Identifier 'i' has already been declared
+
+    // let i;
+    // for (i = 0; i < 3; i++) {
+    //   var i = 2;
+    //   console.log(i)
+    // }
+
+    // function a(a, b) {
+    //   arguments[1] = 10
+    //   console.log(...arguments)
+    // }
+
+    // a(1)
+
+    let node = {
+      name: '1',
+      age: '2'
+    },
+      name = 'luoergou',
+      age = '14';
+
+    ({ name, age } = node) // 表达式
+    // { name, age } = node // 代码块 = 变量  代码块不可以赋值
+    console.log(name, age)
+  </script>
+
+
+</body>
+
+</html>
